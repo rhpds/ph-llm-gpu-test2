@@ -1,8 +1,8 @@
-# {{ values.project_name }}
+# ph-llm-gpu-test2
 
-{{ values.project_description }}
+GPU workshop test 2
 
-**Owner:** {{ values.github_user }}
+**Owner:** treddy08
 
 ---
 
@@ -21,7 +21,7 @@ Claude will walk you through the entire content lifecycle — from intake and sp
 
 ### DevSpaces (recommended)
 
-1. Open in DevSpaces: `{{ values.devspaces_url }}#{{ values.repo_url }}`
+1. Open in DevSpaces: `https://devspaces.apps.ocpv-infra01.dal12.infra.demo.redhat.com#https://github.com/rhpds/ph-llm-gpu-test2`
 2. Use Claude via the **extension** or the **CLI**:
    - **Extension:** Click the **Claude** icon in the sidebar, click **New Session**. If the Claude icon is not visible, open **Extensions** (`Ctrl/Cmd+Shift+X`), find **Claude Code for VS Code** under the DevSpaces section, click it, then click **Enable (Workspace)**.
    - **CLI:** Open a terminal and run `claude`
@@ -31,8 +31,8 @@ Claude will walk you through the entire content lifecycle — from intake and sp
 
 1. Clone the repo:
    ```
-   git clone {{ values.repo_url }}
+   git clone https://github.com/rhpds/ph-llm-gpu-test2
    ```
-2. `cd {{ values.project_name }}`
+2. `cd ph-llm-gpu-test2`
 3. Start Claude CLI: `claude`
 4. Run `/rhdp-publishing-house` — and you're off!
