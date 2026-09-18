@@ -68,11 +68,37 @@ approval_checklist:
   content:
     prerequisites_verifiable: false
     assessment_strategy: ''
-    catalog_gap: ''
+    catalog_gap: "No existing catalog item covers real NVIDIA GPU Operator and Node Feature Discovery Operator installation on a physical GPU worker node combined with running a Jupyter notebook on a GPU-accelerated node via Red Hat OpenShift AI for an intermediate tech sales audience. The closest match uses a simulated fake-gpu-operator and targets advanced users at 4x the intended duration."
     design_overview: ''
     module_summaries: []
-    rcars_overlap_pct: null
-    rcars_top_matches: []
+    rcars_overlap_pct: 58
+    rcars_top_matches:
+      - title: "GPUaaS using Kueue with Fake GPUs"
+        ci_name: "published.ocp-gpu-resource-mgmt.prod"
+        url: "https://catalog.demo.redhat.com/catalog?item=published.ocp-gpu-resource-mgmt.prod"
+        relevance_score: 58
+        why_it_fits: "This lab covers OpenShift and OpenShift AI with GPU operator concepts and RHOAI workbench integration, sharing some topical overlap. However, it focuses on GPU-as-a-Service patterns using a fake GPU operator rather than installing real NVIDIA GPU Operator and NFD on a physical GPU worker node."
+        workloads:
+          - role: "ocp4_workload_authentication"
+            collection: "agnosticd.core_workloads"
+          - role: "ocp4_workload_cert_manager"
+            collection: "agnosticd.core_workloads"
+          - role: "ocp4_workload_external_odf"
+            collection: "agnosticd.core_workloads"
+          - role: "ocp4_workload_openshift_gitops"
+            collection: "agnosticd.core_workloads"
+          - role: "ocp4_workload_showroom"
+            collection: "agnosticd.showroom"
+      - title: "Agentic AI with Llama Stack and 3rd party Frameworks"
+        ci_name: "published.agentic-ai-openshift.prod"
+        url: "https://catalog.demo.redhat.com/catalog?item=published.agentic-ai-openshift.prod"
+        relevance_score: 46
+        why_it_fits: "Runs on Red Hat OpenShift AI and OCP but focuses on agentic AI application development (Llama Stack, RAG, MCP) rather than GPU operator installation or GPU-accelerated node configuration."
+      - title: "LB1559: AI/ML Lifecycle at the Edge"
+        ci_name: "summit-2026.lb1559-ai-lifecycle-edge-cnv.prod"
+        url: "https://catalog.demo.redhat.com/catalog?item=summit-2026.lb1559-ai-lifecycle-edge-cnv.prod"
+        relevance_score: 41
+        why_it_fits: "Includes RHOAI and JupyterLab workbenches targeting intermediate users, but focuses on edge AI/MLOps patterns on MicroShift rather than GPU operator installation or GPU worker node setup."
     rejections: []
   infra:
     peak_environments: null
