@@ -27,29 +27,32 @@ spec:
     status: not_started
   environment:
     platform: ocp
-    topology: ''
+    topology: per-student
     cloud_provider: aws
     max_concurrent_users: null
     ocp_version: '4.21'
     cluster_type: multinode
-    control_plane_instance_count: null
-    control_plane_cpu: null
-    control_plane_ram_gb: null
-    worker_count: null
-    worker_cpu: null
-    worker_ram_gb: null
-    worker_disk_gb: null
+    control_plane_instance_count: 3
+    control_plane_cpu: 8
+    control_plane_ram_gb: 32
+    worker_count: 2
+    worker_cpu: 8
+    worker_ram_gb: 32
+    worker_disk_gb: 100
     vms_per_student: []
     aap_version: ''
     ai_requirement: gpu
     ai_model_tier: ''
     ai_model_name: ''
-    ai_justification: ''
+    ai_justification: "The lab objective is GPU infrastructure configuration — participants install and validate the NVIDIA GPU Operator and Node Feature Discovery Operator on a real GPU node. MaaS is insufficient because the lab requires direct GPU hardware access, not inference services."
     non_ga_products: []
     non_ga_access_plan: ''
-    external_services: []
-    gpu_nodes: 0
-    gpu_type: ''
+    external_services:
+    - nvcr.io
+    - registry.redhat.io
+    - registry.access.redhat.com
+    gpu_nodes: 1
+    gpu_type: g6.8xlarge
   duration_hours: 1
   audience: intermediate
 development:

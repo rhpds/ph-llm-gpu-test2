@@ -60,13 +60,13 @@ Intermediate
 
 ## Infrastructure Requirements
 
-- **Cloud provider:** TBD — confirmed in infrastructure phase
-- **Cluster type:** TBD — confirmed in infrastructure phase
-- **OCP version:** TBD — confirmed in infrastructure phase
-- **Topology:** TBD — confirmed in infrastructure phase
-- **Sizing:** TBD — confirmed in infrastructure phase
-- **Automation approach:** TBD — confirmed in infrastructure phase
-- **AI/MaaS:** TBD — confirmed in infrastructure phase
-- **External services:** TBD — confirmed in infrastructure phase
-- **AAP version:** TBD — confirmed in infrastructure phase
-- **Non-GA products:** TBD — confirmed in infrastructure phase
+- **Cloud provider:** AWS
+- **Cluster type:** Multinode
+- **OCP version:** 4.21
+- **Topology:** Per-student
+- **Sizing:** 3 control plane (8 vCPU, 32GB RAM); 2 standard workers (8 vCPU, 32GB RAM, 100GB disk); 1 GPU worker (g6.8xlarge — 1x NVIDIA L4)
+- **Automation approach:** Ansible
+- **AI/MaaS:** GPU — direct GPU node required. MaaS insufficient; lab objective is GPU infrastructure configuration using NVIDIA GPU Operator and NFD on real hardware.
+- **External services:** nvcr.io, registry.redhat.io, registry.access.redhat.com
+- **AAP version:** N/A
+- **Non-GA products:** None (all products are GA)
