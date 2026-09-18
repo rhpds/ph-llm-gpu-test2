@@ -69,8 +69,12 @@ approval_checklist:
     prerequisites_verifiable: false
     assessment_strategy: ''
     catalog_gap: "No existing catalog item covers real NVIDIA GPU Operator and Node Feature Discovery Operator installation on a physical GPU worker node combined with running a Jupyter notebook on a GPU-accelerated node via Red Hat OpenShift AI for an intermediate tech sales audience. The closest match uses a simulated fake-gpu-operator and targets advanced users at 4x the intended duration."
-    design_overview: ''
-    module_summaries: []
+    design_overview: "This 1-hour lab for intermediate technical sales professionals walks through real NVIDIA GPU Operator and Node Feature Discovery Operator installation on a live OpenShift 4.21 cluster on AWS, then uses Red Hat OpenShift AI to launch a Jupyter notebook that confirms GPU availability — demonstrating the full stack from infrastructure configuration to a working data scientist environment in a single session."
+    module_summaries:
+      - title: "Installing GPU Operators"
+        overview: "Participants install the Node Feature Discovery and NVIDIA GPU Operators via OperatorHub, create the required custom resources, and verify the GPU worker node is labeled and all GPU Operator daemon set pods are running and ready to accept GPU-scheduled workloads."
+      - title: "Running GPU-Accelerated Workloads"
+        overview: "Participants access Red Hat OpenShift AI, create a Data Science Project and GPU-enabled Jupyter workbench, then run a pre-loaded notebook that confirms CUDA availability and executes a GPU-accelerated matrix computation, validating the full stack end to end."
     rcars_overlap_pct: 58
     rcars_top_matches:
       - title: "GPUaaS using Kueue with Fake GPUs"
