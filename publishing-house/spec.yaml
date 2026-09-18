@@ -16,7 +16,15 @@ spec:
   - Install the NVIDIA GPU Operator and Node Feature Discovery Operator on Red Hat OpenShift
   - Configure a GPU-enabled worker node for AI workloads
   - Deploy and run a Jupyter notebook on a GPU-accelerated node using Red Hat OpenShift AI
-  modules: []
+  modules:
+  - id: module-01
+    title: "Installing GPU Operators"
+    duration_min: 30
+    status: not_started
+  - id: module-02
+    title: "Running GPU-Accelerated Workloads"
+    duration_min: 30
+    status: not_started
   environment:
     platform: ocp
     topology: ''
@@ -58,7 +66,7 @@ tracking:
   pause_reason: null
 approval_checklist:
   content:
-    prerequisites_verifiable: null
+    prerequisites_verifiable: false
     assessment_strategy: ''
     catalog_gap: ''
     design_overview: ''
