@@ -6,13 +6,16 @@ project:
   initiative_key: none
   showroom_type: classic
   intake_type: new
-  automation_type: ''
+  automation_type: ansible
   description: GPU workshop test 2
   jira_ticket: RHDPCD-2005
   workflow_id: 1a65510d-fc77-4cfe-8bf6-83d36e5a4902
 spec:
-  title: ''
-  learning_objectives: []
+  title: 'GPU Node Setup and AI Workloads on Red Hat OpenShift'
+  learning_objectives:
+  - Install the NVIDIA GPU Operator and Node Feature Discovery Operator on Red Hat OpenShift
+  - Configure a GPU-enabled worker node for AI workloads
+  - Deploy and run a Jupyter notebook on a GPU-accelerated node using Red Hat OpenShift AI
   modules: []
   environment:
     platform: ocp
@@ -30,7 +33,7 @@ spec:
     worker_disk_gb: null
     vms_per_student: []
     aap_version: ''
-    ai_requirement: ''
+    ai_requirement: gpu
     ai_model_tier: ''
     ai_model_name: ''
     ai_justification: ''
@@ -39,8 +42,8 @@ spec:
     external_services: []
     gpu_nodes: 0
     gpu_type: ''
-  duration_hours: null
-  audience: ''
+  duration_hours: 1
+  audience: intermediate
 development:
   automation: null
   e2e:
