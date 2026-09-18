@@ -1,0 +1,10 @@
+site_name: GPU Node Setup and AI Workloads on Red Hat OpenShift
+docs_dir: publishing-house/spec
+nav:
+- Home: index.md
+- Design Spec: design.md
+- Modules:
+  - Module 1 - Installing Gpu Operators: modules/module-01-installing-gpu-operators.md
+  - Module 2 - Running Gpu Workloads: modules/module-02-running-gpu-workloads.md
+plugins:
+- techdocs-core
